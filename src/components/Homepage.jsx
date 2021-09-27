@@ -9,6 +9,7 @@ import News from './News';
 const Homepages = () => {
     const {data,isFetching} = useGetCryptosQuery();
     const globalStats = data?.data?.stats;
+    console.log(globalStats);
     if(isFetching) return "Loading...";
     return (
         <>
@@ -21,7 +22,7 @@ const Homepages = () => {
                 <Col span={12}><Statistic title="Total Markets" value={millify(globalStats.totalMarkets)} /></Col>
             </Row>
             </Typography.Title>
-            <Cryptocurrencies simpilfied />
+            <Cryptocurrencies simpilfied={true} />
             <div className="home-heading-container">
                 <Typography.Title level={2} className="home-title"> Top 10 Cryptocurrencies in the world
                 </Typography.Title>
