@@ -39,6 +39,7 @@ const App = () => {
                        </div>
                    </Layout>
             </div>
+        </div>
             <div className="footer">
                 <Typography.Title>
                     Cryptoverse <br/>
@@ -50,7 +51,6 @@ const App = () => {
                         <Link to="/news">News</Link>
                     </Space>
             </div>
-        </div>
         </div>
     )
 }
